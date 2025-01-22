@@ -1,0 +1,29 @@
+.slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  max-width: 320px;
+
+  @media (min-width: $tablet-width) {
+    max-width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: $desktop-width;
+  }
+}
+
+.slider__inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
+}

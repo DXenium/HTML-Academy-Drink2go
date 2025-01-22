@@ -1,0 +1,52 @@
+.social {
+  @include flex-box();
+  flex-direction: row;
+  gap: 20px;
+}
+
+.social__link {
+  display: block;
+  text-decoration: none;
+  min-width: 40px;
+  min-height: 40px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  transition: background-color, 1s;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: $base-gray-color;
+    transition: background-color, 1.3s;
+    mask-size: 20px 20px;
+    mask-repeat: no-repeat;
+    mask-position: 50%;
+  }
+
+  &--vkontakte::before {
+    mask-image: url("../../icons/stack.svg#vk-icon");
+  }
+
+  &--pinterest::before {
+    mask-image: url("../../icons/stack.svg#pinterest-icon");
+  }
+
+  &--ok::before {
+    mask-image: url("../../icons/stack.svg#ok-icon");
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $base-secondary-color;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    background-color: $base-primary-color;
+  }
+}

@@ -1,0 +1,153 @@
+.range__wrapper {
+  max-width: 280px;
+  height: auto;
+
+  background: none;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+  margin-left: 5px;
+
+  @media (min-width: $desktop-width) {
+    max-width: 318px;
+  }
+}
+
+.range .range__scale {
+  position: relative;
+  width: 280px;
+  height: 2px;
+  margin-bottom: 35px;
+  margin-top: 10px;
+  background-color: $light-gray;
+
+  @media (min-width: $tablet-width) {
+    width: 222px;
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 313px;
+  }
+}
+
+.range .range__bar {
+  position: absolute;
+  height: 4px;
+  background-color: $light-primary;
+}
+
+.range .range__bar:disabled {
+  background-color: $base-gray-color;
+}
+
+.range .range__toggle {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background: $white-color;
+  border: 2px solid $light-primary;
+  border-radius: 50%;
+  transition: all 0.3s;
+  cursor: pointer;
+  top: -10px;
+  box-shadow: none;
+}
+
+.range .range__toggle::before,
+.range .range__toggle::after {
+  display: none;
+}
+
+.range .range__toggle--min {
+  left: 0;
+}
+
+.range .range__toggle--max {
+  right: -20px;
+
+  @media (min-width: $tablet-width) {
+    right: -10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: -25px;
+  }
+}
+
+.range .range__toggle:hover {
+  background-color: rgba(120, 89, 207, 0.25);
+}
+
+.range .range__toggle:active {
+  background-color: $base-primary-color;
+}
+
+.range .range__toggle:disabled {
+  border-color: $base-gray-color;
+}
+
+.range .range__inputs {
+  display: flex;
+  justify-content: flex-start;
+  gap: 44px;
+  margin-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    gap: 48px;
+  }
+}
+
+.range .range__input {
+  width: 119px;
+  padding: 6px 10px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: $text-base-color;
+  text-align: center;
+  border: 2px solid $base-primary-color;
+  border-radius: 4px;
+  appearance: textfield;
+
+  @media (min-width: $tablet-width) {
+    width: 87px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 135px;
+  }
+}
+
+.range .range__input::placeholder {
+  color: $base-gray-color;
+}
+
+.range .range__input:focus,
+.range .range__input:focus-visible {
+  border: 2px solid #593cac;
+  outline: none;
+}
+
+.range .range__input:disabled {
+  border: 2px solid #e2e2e2;
+  background: #f8f8f8;
+}
+
+.range .range__input--max-price {
+  color: $text-base-color;
+}
+
+.range .range__label {
+  position: relative;
+}
+
+.range .range__label::after {
+  content: "";
+  position: absolute;
+  right: -25px;
+  top: 50%;
+  width: 8px;
+  height: 2px;
+  background-color: $base-gray-color;
+}

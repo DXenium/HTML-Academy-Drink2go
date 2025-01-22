@@ -1,0 +1,59 @@
+.controls {
+  position: relative;
+  display: block;
+  padding-left: 35px;
+  font-size: 16px;
+  line-height: 24px;
+  transition: all 0.3s;
+}
+
+.controls__mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  background-color: #ffffff;
+  border-radius: 24px;
+  border: 2px solid $base-gray-color;
+}
+
+.controls__input[type="radio"]:checked+.controls__mark {
+  border-color: $base-primary-color;
+}
+
+.controls__input[type="radio"]:checked+.controls__mark::before {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-color: $base-primary-color;
+  border-radius: 16px;
+}
+
+.controls__input:disabled+.controls__mark {
+  border-color: $light-gray;
+}
+
+.controls__input:disabled~.controls__label {
+  color: $base-gray-color;
+}
+
+.controls__input:not(:disabled):hover+.controls__mark,
+.controls__input:focus+.controls__mark {
+  border-color: $base-primary-color;
+}
+
+.controls__input:not(:disabled):hover+.controls__mark::before,
+.controls__input:focus+.controls__mark::before {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-color: rgba(120, 89, 207, 0.25);
+  border-radius: 16px;
+}

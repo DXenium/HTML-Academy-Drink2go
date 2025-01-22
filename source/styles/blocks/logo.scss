@@ -1,0 +1,36 @@
+.logo {
+  text-decoration: none;
+  width: 32px;
+  height: 36px;
+  transition: opacity, 0.3s;
+
+  @media (min-width: $tablet-width) {
+    width: 82px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 316px;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.logo__text {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    @include font($family: $primary-font, $size: 12px, $height: 16px, $weight: 400, $style: normal, $color: $text-base-color);
+    align-self: baseline;
+    display: block;
+    padding: 0;
+    margin: 0;
+    margin-top: 2px;
+  }
+}

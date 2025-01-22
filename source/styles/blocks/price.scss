@@ -1,0 +1,46 @@
+.price__old {
+  color: $base-primary-color;
+  font-size: 16px;
+  line-height: 32px;
+  text-decoration: line-through;
+  margin: 0;
+}
+
+.price__new {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 600;
+  margin: 0;
+  margin-left: 6px;
+}
+
+.price__button {
+  @include font($family: $primary-font, $size: 16px, $height: 24px, $weight: 400, $style: normal, $color: $text-base-color);
+  min-width: 113px;
+  padding: 8px 20px;
+  border-radius: 4px;
+  background-color: $base-primary-color;
+  color: $white-color;
+  font-size: 16px;
+  line-height: 24px;
+  border: none;
+  margin-left: 23px;
+  transition: background-color, 1.3s;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 20px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $light-primary;
+  }
+
+  &:active {
+    background-color: #593cac;
+  }
+
+  &:disabled {
+    background-color: $base-gray-color;
+  }
+}

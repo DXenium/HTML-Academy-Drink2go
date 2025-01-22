@@ -1,0 +1,147 @@
+.filter {
+  margin-bottom: 44px;
+
+  @media (min-width: $tablet-width) {
+    @include flex-box ($align-items: flex-start, $justify-content: flex-start, $flex-direction: row);
+    gap: 10px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/2;
+    grid-row: 3/-1;
+
+    display: block;
+  }
+}
+
+.filter__group {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.filter__group--range {
+  @media (min-width: $tablet-width) {
+    margin-right: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 30px;
+  }
+}
+
+.filter__group--country {
+  @media (min-width: $tablet-width) {
+    margin-left: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+  }
+}
+
+.filter__title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.filter__title--country {
+  margin-bottom: 15px;
+}
+
+.filter__label {
+  display: flex;
+}
+
+.filter__list {
+  @include list-reset();
+  margin-bottom: 30px;
+}
+
+.filter__list--country {
+  margin-bottom: 27px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 37px;
+  }
+}
+
+.filter__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.filter__item--country:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.filter__buttoms-wrapper {
+  @include flex-box ($align-items: center, $justify-content: space-between, $flex-direction: column);
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    margin-left: 226px;
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+    margin: 0;
+  }
+}
+
+.filter__button {
+  font-family: inherit;
+  width: 100%;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $base-primary-color;
+  background-color: $white-color;
+  transition: background-color, color, 1.3s;
+
+  @media (min-width: $tablet-width) {
+    width: 137px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 149px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $light-primary;
+    color: $white-color;
+  }
+
+  &:active {
+    background-color: #593cac;
+    color: $white-color;
+  }
+
+  &:disabled {
+    background-color: $base-gray-color;
+    color: $white-color;
+  }
+}
+
+.filter__button--submit {
+  color: $white-color;
+  background-color: $base-primary-color;
+}
+
+.filter__button--reset {
+  @media (min-width: $tablet-width) {
+    width: 120px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 149px;
+  }
+}

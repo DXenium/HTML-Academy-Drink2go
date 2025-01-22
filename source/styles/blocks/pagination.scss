@@ -1,0 +1,26 @@
+.pagination__item {
+  min-width: 62px;
+  min-height: 4px;
+  display: block;
+  position: relative;
+}
+
+.pagination__item::before {
+  content: "";
+  background-color: $white-color;
+  width: 100%;
+  height: 4px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  transition: background-color, 1.3s;
+}
+
+.pagination__item--active::before,
+.pagination__item:active::before {
+  background-color: $base-primary-color;
+}
+
+.pagination__item:not(.pagination__item--active):hover::before {
+  background-color: rgba(120, 89, 207, 0.25);
+}
