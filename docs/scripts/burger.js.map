@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["source/scripts/burger.js"],
+  "sourcesContent": ["/* \u043C\u043E\u0431\u0438\u043B\u044C\u043D\u043E\u0435 \u043C\u0435\u043D\u044E */\n\nconst headerPage = document.querySelector('.main-header');\nconst navMain = document.querySelector('.main-header__nav');\nconst navToggle = document.querySelector('.main-header__button');\n\nheaderPage.classList.remove('main-header--nojs');\nnavMain.classList.add('main-header__nav--closed');\n\nnavToggle.addEventListener('click', () => {\n  if (navMain.classList.contains('main-header__nav--closed')) {\n    navMain.classList.remove('main-header__nav--closed');\n    navMain.classList.add('main-header__nav--opened');\n    navToggle.classList.add('main-header__button--close');\n  } else {\n    navMain.classList.add('main-header__nav--closed');\n    navMain.classList.remove('main-header__nav--opened');\n    navToggle.classList.remove('main-header__button--close');\n  }\n});\n"],
+  "mappings": ";AAEA,IAAM,aAAa,SAAS,cAAc,cAAc;AACxD,IAAM,UAAU,SAAS,cAAc,mBAAmB;AAC1D,IAAM,YAAY,SAAS,cAAc,sBAAsB;AAE/D,WAAW,UAAU,OAAO,mBAAmB;AAC/C,QAAQ,UAAU,IAAI,0BAA0B;AAEhD,UAAU,iBAAiB,SAAS,MAAM;AACxC,MAAI,QAAQ,UAAU,SAAS,0BAA0B,GAAG;AAC1D,YAAQ,UAAU,OAAO,0BAA0B;AACnD,YAAQ,UAAU,IAAI,0BAA0B;AAChD,cAAU,UAAU,IAAI,4BAA4B;AAAA,EACtD,OAAO;AACL,YAAQ,UAAU,IAAI,0BAA0B;AAChD,YAAQ,UAAU,OAAO,0BAA0B;AACnD,cAAU,UAAU,OAAO,4BAA4B;AAAA,EACzD;AACF,CAAC;",
+  "names": []
+}
