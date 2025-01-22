@@ -6,16 +6,17 @@
   <title>Название проекта</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="icon" href="favicon.ico">
-  <link rel="icon" href="favicons/favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="favicons/favicon-180x180.png">
+  <link rel="icon" href="../source/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../source/favicons/favicon-180x180.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="preload" href="fonts/montserrat/Montserrat-Regular.woff2" as="font" type="font/woff2"
+  <link rel="preload" href="../source/fonts/montserrat/Montserrat-Regular.woff2" as="font" type="font/woff2"
     crossorigin="anonymous">
-  <link rel="preload" href="fonts/montserrat/Montserrat-Medium.woff2" as="font" type="font/woff2"
+  <link rel="preload" href="../source/fonts/montserrat/Montserrat-Medium.woff2" as="font" type="font/woff2"
     crossorigin="anonymous">
-  <link rel="preload" href="fonts/montserrat/Montserrat-SemiBold.woff2" as="font" type="font/woff2"
+  <link rel="preload" href="../source/fonts/montserrat/Montserrat-SemiBold.woff2" as="font" type="font/woff2"
     crossorigin="anonymous">
-  <link rel="preload" href="fonts/montserrat/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="../source/fonts/montserrat/Montserrat-Bold.woff2" as="font" type="font/woff2"
+    crossorigin="anonymous">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer="defer"></script>
 </head>
@@ -24,11 +25,11 @@
   <header class="page__header main-header main-header--nojs" data-test="header">
     <a class="main-header__logo logo" href="#" aria-current="page">
       <picture>
-        <source media="(min-width: 1440px)" srcset="source/images/logo.svg" type="image/svg+xml" width="170"
+        <source media="(min-width: 1440px)" srcset="../source/images/logo.svg" type="image/svg+xml" width="170"
           height="36">
-        <source media="(min-width: 768px)" srcset="source/images/logo-tablet.svg" type="image/svg+xml" width="82"
+        <source media="(min-width: 768px)" srcset="../source/images/logo-tablet.svg" type="image/svg+xml" width="82"
           height="36">
-        <img class="logo__image" loading="lazy" src="source/images/logo-mobile.svg" width="32" height="36"
+        <img class="logo__image" loading="lazy" src="../source/images/logo-mobile.svg" width="32" height="36"
           alt="Логотип компании Drink2Go">
       </picture>
       <p class="main-header__logo logo__text">Интернет-магазин<br>кофейных напитков</p>
@@ -64,23 +65,22 @@
           <div class="hero__container">
             <picture>
               <source media="(min-width: 1440px)"
-                srcset="../../source/images/white-can@1x.webp, ../../source/images/white-can@2x.webp 2x"
-                type="image/webp" width="600" height="600">
+                srcset="../source/images/white-can@1x.webp, ../source/images/white-can@2x.webp 2x" type="image/webp"
+                width="600" height="600">
 
               <source media="(min-width: 768px)"
-                srcset="../../source/images/tablet-white-can@1x.webp, ../../source/images/tablet-white-can@2x.webp 2x"
+                srcset="../source/images/tablet-white-can@1x.webp, ../source/images/tablet-white-can@2x.webp 2x"
                 type="image/webp" width="476" height="476">
-              <source
-                srcset="../../source/images/mobile-white-can@1x.webp, ../../source/images/mobile-white-can@2x.webp 2x"
+              <source srcset="../source/images/mobile-white-can@1x.webp, ../source/images/mobile-white-can@2x.webp 2x"
                 type="image/webp" width="280" height="280">
               <source media="(min-width: 1440px)"
-                srcset="../../source/images/white-can@1x.jpg, ../../source/images/white-can@2x.jpg 2x" type="image/jpg"
+                srcset="../source/images/white-can@1x.jpg, ../source/images/white-can@2x.jpg 2x" type="image/jpg"
                 width="600" height="600">
               <source media="(min-width: 768px)"
-                srcset="../../source/images/tablet-white-can@1x.jpg, ../../source/images/tablet-white-can@2x.jpg 2x"
+                srcset="../source/images/tablet-white-can@1x.jpg, ../source/images/tablet-white-can@2x.jpg 2x"
                 type="image/jpg" width="476" height="476">
               <img class="hero__image" loading="lazy" fetchpriority="high"
-                src="../../source/images/mobile-white-can@1x.jpg" width="280" height="280"
+                src="../source/images/mobile-white-can@1x.jpg" width="280" height="280"
                 alt="Банка напитка Декаф Флэт уайт">
             </picture>
             <div class="hero__wrapper">
